@@ -1,0 +1,213 @@
+/*标签*/
+html, body, p, h1, h2, h3, h4, h5, h6, form, input, textarea, select, button, fieldset, legend, img, ul, ol, li, dl, dt, dd, th, td, pre, blockquote { margin: 0; padding: 0; }
+html { color: #333; background: #fff; font-size: 62.5%; }
+body, button, input, select, textarea, h1, h2, h3, h4, h5, h6 { font-size: 1.4em; font-family:microsoft yahei, SimSun,Verdana, Arial, sans-serif; }
+img, fieldset { border: 0; vertical-align: middle; }
+textarea { word-wrap: break-word; word-break: break-all; resize: none; }
+li { list-style: none; }
+img { border: none; }
+a { text-decoration: none; color: #333; }
+    a:hover { color: #628828; }
+    a:focus { outline: none; }
+/*位置*/
+.fl { float: left; }
+.fr { float: right; }
+/*字体大小*/
+.f14{font-size: 14px}
+.f18{font-size: 16px}
+.f20{font-size: 18px}
+/*内容宽度*/
+.w1200{width: 1200px;margin: 0 auto;}
+/*清理浮动*/
+.clearfix:before,
+.clearfix:after {
+    content: " "; 
+    display: table 
+}
+.clearfix:after { clear: both}
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.clearfix {*zoom: 1}
+/*头部*/
+header{
+    border-bottom: 1px solid #ddd;
+}
+.main{
+    padding-bottom: 320px;
+}
+.logolink{
+    display: block;
+    height: 80px;
+    line-height: 80px;
+}
+.nav{
+    margin-left: 180px;
+    li{
+        float: left;
+        height: 80px;
+        line-height: 80px;
+        position: relative;
+        border-bottom: 3px solid #fff;
+        >a{
+            display: block;
+            padding: 0 30px;
+            font-size: 14px;
+        }
+        &:hover,&.on{
+            border-color: #01AAED;
+            >a{
+                color: #01AAED;
+            }
+            .subnav{
+                display: block;
+            }
+        }
+        .subnav{
+            display: none;
+            position: absolute;
+            top: 80px;
+            left: 0;
+            width: 100%;
+            a{
+                display: block;
+                height: 40px;
+                line-height: 40px;
+                font-size: 14px;
+                text-align: center;
+                &:hover{
+                    color: #01AAED;
+                }
+            }
+        }
+    }
+}
+.topRightBtn{
+    display: block;
+    font-size: 14px;
+    width: 130px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 10px;
+    color: #fff;
+    text-align: center;
+    background-color: #01AAED;
+    margin-top: 20px;
+    &:hover{
+        color: #fff;
+        opacity: .8;
+    }
+}
+/*底部*/
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 300px;
+    background:url(../images/blackbg.png) left top;
+}
+.foorinner{
+    padding-top: 30px;
+}
+.footleft{
+    width: 600px;
+    .contactnotice{
+        color: #fff;
+        margin-bottom: 15px;
+    }
+    .formitem{
+        margin-bottom: 15px;
+        input{
+            width: 400px;
+            height: 40px;
+            line-height: 40px;
+            font-size: 14px;
+            padding:  0 10px;
+            border: 1px solid #707682;
+            outline: none;
+        }
+    } 
+    .submitbtn{
+        display: block;
+        width: 420px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 16px;
+        text-align: center;
+        color: #fff;
+        background-color: #01AAED;
+        border: none;
+    }
+}
+.footright{
+    width: 580px;
+    margin-left: 20px;
+    .messageul{
+        margin-top: 35px;
+        li{
+            color: #fff;
+            margin-bottom: 15px;
+            line-height: 25px;
+            span{
+                margin-left: 10px;
+            }
+        }
+    }
+}
+/*右侧导航*/
+.rightlink{
+    position: fixed;
+    right: 10px;
+    top: 50%;
+    z-index: 3000;
+    li{
+        margin-bottom: 10px;
+        position: relative;
+        a{
+            display: block;
+            width: 50px;
+            height: 50px;
+            text-align: center;
+        }
+        .phonenum{
+            display: none;
+            position: absolute;
+            width: 150px;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            top: 0;
+            right: 50px;
+            color: #fff;
+            background-color: #01AAED;
+        }
+        .erweimaimg{
+            display: none;
+            position: absolute;
+            right: 55px;
+            top: 0;
+        }
+        .phonelink{
+            background: #f0f0f0  url(../images/righticon1.png) center 15px no-repeat;
+            &:hover{
+                background-position: center -62px;
+                background-color: #01AAED;
+            }
+        }
+        .erweimalink{
+            background:#f0f0f0  url(../images/righticon2.png) center 12px no-repeat;
+            &:hover{
+                background-position: center -59px;
+                background-color: #01AAED;
+            }
+        }
+        .gotoplink{
+            background: #f0f0f0 url(../images/righticon3.png) center 10px no-repeat;
+            &:hover{
+                background-position: center -59px;
+                background-color: #01AAED;
+            }
+        }
+    }
+}
