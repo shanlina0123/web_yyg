@@ -154,12 +154,6 @@ header {
 .nav li.on > a {
   color: #01AAED;
 }
-.nav li.on .subnav {
-  background-color: #fff;
-  border: 1px solid #ddd;
-  border-top: none;
-  display: block;
-}
 .nav li .subnav {
   display: none;
   position: absolute;
