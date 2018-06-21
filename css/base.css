@@ -139,22 +139,31 @@ header {
   padding: 0 30px;
   font-size: 14px;
 }
-.nav li:hover,
+.nav li:hover > a {
+  color: #01AAED;
+}
+.nav li:hover .subnav {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-top: none;
+  display: block;
+}
 .nav li.on {
   border-color: #01AAED;
 }
-.nav li:hover > a,
 .nav li.on > a {
   color: #01AAED;
 }
-.nav li:hover .subnav,
 .nav li.on .subnav {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-top: none;
   display: block;
 }
 .nav li .subnav {
   display: none;
   position: absolute;
-  top: 80px;
+  top: 83px;
   left: 0;
   width: 100%;
 }
@@ -295,4 +304,61 @@ footer {
 .rightlink li .gotoplink:hover {
   background-position: center -59px;
   background-color: #01AAED;
+}
+/*分页*/
+.page {
+  padding: 50px 0 30px 0;
+  text-align: center;
+}
+.page .pageList {
+  text-align: center;
+  margin: 0 auto;
+  font-size: 0;
+}
+.page .pageList a {
+  display: inline-block;
+  font-size: 12px;
+  padding: 5px 9px;
+  border: 1px solid #dfdfdf;
+  background-color: #fff;
+  color: #999;
+  margin: 0 5px;
+  margin-top: 2px;
+}
+.page .pageList a:hover,
+.page .pageList .active {
+  background-color: #01AAED;
+  color: #fff;
+  border-color: #01AAED;
+}
+.page .pageList .prev {
+  height: 17px;
+}
+.page .pageList .next {
+  width: 12px;
+  height: 17px;
+}
+.page .pageList input {
+  font-size: 12px;
+  border: none;
+  background-color: #f1f1f1;
+  padding: 8px 9px;
+  margin-left: 12px;
+}
+.page .pageList .PageIndex {
+  width: 32px;
+  height: 27px;
+  line-height: 27px;
+  text-align: center;
+  background: #fff;
+  border: 1px solid #dfdfdf;
+  display: inline-block;
+  margin-top: 2px;
+  padding: 0;
+}
+.page .pageList .goToPage {
+  font-size: 12px;
+  display: inline-block;
+  padding: 0 3px 0 8px;
+  color: #999;
 }

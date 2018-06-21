@@ -24,28 +24,42 @@
   margin-top: 20px;
   border: 1px solid #ccc;
 }
-.newsList li a:hover {
-  color: #01AAED;
+.newsList li:hover {
+  background-color: #f2f2f2;
+}
+.newsList li .lefttip {
+  font-size: 16px;
 }
 .newsList li .newleft {
   width: 300px;
-  height: 150px;
   overflow: hidden;
+}
+.newsList li .hadread {
+  font-size: 16px;
+  margin-left: 20px;
 }
 .newsList li .newright {
   width: 858px;
   padding: 15px 20px;
-  background-color: #f2f2f2;
+}
+.newsList li .newright:hover a {
+  color: #01AAED;
+}
+.newsList li .newright .newmore {
+  margin-left: 10px;
 }
 .newsList li .newname {
   display: block;
   height: 30px;
+  font-size: 22px;
   line-height: 30px;
+  margin: 10px 0;
   overflow: hidden;
 }
 .newsList li .newdescribe {
-  height: 60px;
-  line-height: 30px;
+  height: 75px;
+  line-height: 25px;
+  font-size: 12px;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3;
@@ -55,18 +69,37 @@
   line-height: 30px;
 }
 /*新闻详情页面*/
+.newout {
+  padding: 25px 0 10px 0;
+  border-bottom: 1px solid #f0eded;
+}
+.newout .lefttip {
+  font-size: 16px;
+}
+.newout .hadsee {
+  margin-left: 20px;
+}
 .newdetail {
-  padding: 20px 0;
+  padding: 30px 0 20px 0;
 }
 .newdetail .newtite {
-  font-size: 16px;
+  font-size: 28px;
   height: 40px;
   line-height: 40px;
   text-align: center;
   overflow: hidden;
 }
-.newdetail .newtime {
-  text-align: center;
+.newdetail .detaildescribe {
+  margin-top: 20px;
+  padding: 1em;
+  line-height: 25px;
+  background-color: #efefef;
+}
+.newdetail .newcontent {
+  margin-top: 15px;
+}
+.newdetail .newcontent p {
+  line-height: 25px;
 }
 /*关于我们页面*/
 .contenttop {
@@ -97,30 +130,50 @@
   text-align: center;
 }
 /*合作加盟*/
-.cooperateform {
-  width: 500px;
-  margin: 20px auto;
+.toptext {
+  font-size: 30px;
+  color: #666;
+  padding: 50px 0 47px;
+  text-align: center;
 }
-.cooperateform .item {
-  margin-bottom: 15px;
+.topdes {
+  border: 8px solid #eee;
+  padding: 20px 30px;
 }
-.cooperateform .item input {
-  width: 430px;
-  height: 40px;
-  line-height: 40px;
-  padding: 0 10px;
-  outline: none;
-  font-size: 14px;
-  border: 1px solid #707682;
+.topdes .topright {
+  margin-left: 30px;
 }
-.cooperateform .submitbtn {
-  display: block;
-  width: 450px;
-  height: 40px;
-  line-height: 40px;
+.topdes .topright li {
   font-size: 16px;
+  margin: 80px 0;
+}
+.topdes .topright .numbers {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 10px;
   text-align: center;
   color: #fff;
-  background-color: #01AAED;
-  border: none;
+  font-size: 14px;
+  background-color: #FE7A5D;
+  margin-right: 10px;
+}
+.bottomdes {
+  height: 500px;
+  padding: 20px 0 0 150px;
+  background: #F9F9F9 url(../images/flowimg.gif) 50px center no-repeat;
+}
+.bottomdes li {
+  width: 1013px;
+  height: 80px;
+  background: url(../images/triangle.png) center no-repeat;
+  padding: 17px 23px 0 35px;
+  margin-bottom: 19px;
+  box-sizing: border-box;
+}
+.bottomdes li .title {
+  font-size: 16px;
+  color: #ff6800;
+  margin-bottom: 12px;
 }
