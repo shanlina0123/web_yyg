@@ -1,4 +1,18 @@
 /*招聘信息*/
+.recruitbanner{
+    padding: .1px;
+    height: 420px;
+    background: url(../images/recruitbanner.jpg) no-repeat;
+    .topbanner{
+        font-size: 40px;
+        margin-top: 157px;
+        margin-left: 80px;
+    }
+    .bottombanner{
+        margin-top: 25px;
+        font-size: 16px;
+    }
+}
 .recruitul{
     li{
         margin-top:20px;
@@ -10,6 +24,7 @@
         .recruitname{
             display: block;
             font-size: 20px;
+            color: #fff;
             text-align: center;
             margin: 158px auto;
         }
@@ -43,6 +58,10 @@
         .newleft{
             width: 300px;
             overflow: hidden;
+            img{
+                max-width: 300px;
+                max-height: 197px;
+            }
         }
         .hadread{
             font-size: 16px;
@@ -116,6 +135,10 @@
     }
 }
 /*关于我们页面*/
+.aboutbanner{
+    height: 420px;
+    background: url(../images/aboutbanner.png) no-repeat
+}
 .contenttop{
     padding-top: 30px;
 }
@@ -196,33 +219,83 @@
 /*合作加盟banner*/
 .bannerwrap{
     height: 420px;
-    background: url(../images/cooperatebanner.png) center no-repeat;
-    .bannertext{
-        text-align: center;
-        .texts{
-            font-size: 34px;
-            color: #fff;
-            padding: 110px 0 30px;
-        }
-        .bannerbtn{
-            display: block;
-            width: 180px;
-            height: 40px;
-            line-height: 40px;
-            color: #fff;
-            font-size: 18px;
-            border-radius: 5px;
-            margin: 10px auto;
-            background-color: #01AAED
-        }
-        .bannerphone{
-            color: #fff;
-            font-size: 16px;
-            margin-top: 15px;
-        }
+    background: url(../images/cooperate.jpg) center no-repeat;
+}
+.bannertext{
+    text-align: center;
+    .texts{
+        font-size: 34px;
+        color: #fff;
+        padding: 110px 0 25px;
+    }
+    .bannerbtn{
+        display: block;
+        width: 150px;
+        height: 40px;
+        line-height: 40px;
+        color: #fff;
+        font-size: 18px;
+        border-radius: 5px;
+        margin: 10px auto;
+        background-color: #01AAED
+    }
+    .bannerphone{
+        color: #fff;
+        font-size: 16px;
+        margin-top: 30px;
     }
 }
 /*首页样式*/
+.indexbanner{
+    position: relative;
+    height: 420px;
+    .indexbanner1{
+        height: 420px;
+        background: url(../images/indexbanner1.jpg) no-repeat;
+        padding: .1px;
+    }
+    .indexbanner2{
+        height: 420px;
+        background: url(../images/indexbanner2.jpg) no-repeat;
+        padding: .1px;
+    }
+    .indexbanner3{
+        height: 420px;
+        background: url(../images/indexbanner3.jpg) no-repeat;
+        padding: .1px;
+    }
+    .bannertext{
+        text-align: right;
+        color: #fff;
+        font-size: 28px;
+        margin-top: 180px;
+        
+    }
+}
+.slidesjs-pagination {
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    text-align: center;
+    z-index: 20;
+    li{
+        display: inline-block;
+        width: 25px;
+        height: 25px;
+        a{
+            display: block;
+            width: 25px;
+            height: 25px;
+            text-align: center;
+            line-height: 25px;
+            font-size: 0;
+            background: url(../images/iconSlide.png) center no-repeat;
+            &.active{
+                background: url(../images/iconSlideOn.png) center no-repeat;
+            }
+        }
+    }
+}
 .parttitle{
     font-size: 30px;
     text-align: center;
@@ -294,6 +367,92 @@
     }
 }
 /*产品页面样式*/
+.probannerwrap{
+    height: 420px;
+    background: url(../images/probanner.jpg) no-repeat;
+    .probannertext{
+        text-align: right;
+        color: #fff;
+        font-size: 32px;
+        margin-top: 135px;
+        span{
+            font-size: 60px;
+            margin-right: 25px;
+        }
+    }
+    .prolinkbtn{
+        color: #fff;
+        width: 130px;
+        height: 40px;
+        font-size: 18px;
+        line-height: 40px;
+        text-align: center;
+        border-radius: 10px;
+        background: #fa6a0b;
+        margin-top: 20px;
+    }
+}
+
+.editionleft{
+    width: 450px;
+    height: 450px;
+    background: url(../images/pcbg.png) center no-repeat;
+    span{
+        display: block;
+        font-size: 24px;
+        color: #FF5722;
+        text-align:center;
+        margin-top: 195px;
+    }
+}
+.editionright{
+    width: 685px;
+    height: 450px;
+    background: url(../images/pcline.png) no-repeat;
+    padding-left: 65px;
+    li{
+        margin-bottom: 26px;
+        &:first-child{
+            margin-top: -10px;
+        }
+        span{
+            display: inline-block;
+            padding:8px 15px;
+            border-radius: 5px;
+            color: #fff;
+            margin: 0 8px;
+        }
+        .blackbg{
+            background-color: #123260
+        }
+        .orangebg{
+            background-color: #eb7221
+        }
+    }
+}
+.editionleft.editionleft3{
+    width: 225px;
+    height: 470px;
+    background: url(../images/phonebg.png) center no-repeat;
+}
+.editionright.editionright3{
+    width: 900px;
+    height: 290px;
+    margin-top: 95px;
+    background: url(../images/phoneline2.png) no-repeat;
+    li{
+        margin-bottom: 45px;
+        &:first-child{
+            margin-top: 0;
+        }
+        span{
+            margin: 0 15px;
+        }
+    }
+}
+
+
+
 .protext{
     font-size: 32px;
     text-align: center;
@@ -346,6 +505,27 @@
             line-height: 25px;
             padding: 10px 0;
             color: #393D49
+        }
+    }
+}
+.producttable{
+    width: 100%;
+    text-align: center;
+    border: 1px solid #ddd;
+    tr{
+        th{
+            height: 60px;
+            line-height: 60px;
+            font-size: 16px;
+            width: 33%;
+            border: 1px solid #ddd;
+            background-color: #eee;
+        }
+        td{
+            border: 1px solid #ddd;
+            padding: 8px 0;
+            color: #fff;
+            background-color: #01AAED;
         }
     }
 }
