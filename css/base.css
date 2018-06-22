@@ -112,6 +112,9 @@ a:focus {
 .clearfix {
   *zoom: 1;
 }
+.wrap {
+  min-width: 1200px;
+}
 /*头部*/
 header {
   border-bottom: 1px solid #ddd;
