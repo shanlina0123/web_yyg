@@ -52,12 +52,20 @@
   font-size: 16px;
 }
 .newsList li .newleft {
+  display: table-cell;
   width: 300px;
+  line-height: 190px;
+  vertical-align: middle;
+  text-align: center;
   overflow: hidden;
 }
 .newsList li .newleft img {
+  display: block;
   max-width: 300px;
   max-height: 197px;
+  margin: 0 auto;
+  display: inline-block;
+  vertical-align: middle;
 }
 .newsList li .hadread {
   font-size: 16px;
@@ -138,7 +146,7 @@
   position: relative;
   width: 40%;
   border-top: 2px solid #ddd;
-  margin: 30px auto;
+  margin: 50px auto;
 }
 .abouttitle span {
   position: absolute;
@@ -146,7 +154,7 @@
   top: -20px;
   left: 50%;
   margin-left: -67px;
-  font-size: 16px;
+  font-size: 26px;
   font-weight: bold;
   display: inline;
   padding: 0 30px;
@@ -155,8 +163,17 @@
 .contentpart p {
   line-height: 30px;
 }
-.centercontent {
+.contentpart img {
+  max-width: 100%;
+  display: block;
+  margin: 10px 0;
+}
+.content {
   text-align: center;
+}
+.imagewrap img {
+  float: left;
+  max-width: 50%;
 }
 /*合作加盟*/
 .toptext {
@@ -285,6 +302,10 @@
 .slidesjs-pagination li a.active {
   background: url(../images/iconSlideOn.png) center no-repeat;
 }
+.indexpart1 {
+  padding-top: 30px;
+  padding-bottom: 80px;
+}
 .parttitle {
   font-size: 30px;
   text-align: center;
@@ -318,8 +339,9 @@
   display: block;
   line-height: 25px;
 }
-.codeul {
-  margin-bottom: 50px;
+.indexpart2 {
+  background-color: #ececec;
+  padding-bottom: 50px;
 }
 .codeul li {
   float: left;

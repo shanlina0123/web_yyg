@@ -56,11 +56,19 @@
             font-size: 16px;
         }
         .newleft{
+            display: table-cell;
             width: 300px;
+            line-height: 190px;
+            vertical-align: middle;
+            text-align: center;
             overflow: hidden;
             img{
+                display: block;
                 max-width: 300px;
                 max-height: 197px;
+                margin: 0 auto;
+                display :inline-block;
+                vertical-align: middle;
             }
         }
         .hadread{
@@ -146,14 +154,14 @@
     position: relative;
     width: 40%;
     border-top: 2px solid #ddd;
-    margin: 30px auto;
+    margin: 50px auto;
     span{
         position: absolute;
         line-height: 40px;
         top: -20px;
         left: 50%;
         margin-left: -67px;
-        font-size: 16px;
+        font-size: 26px;
         font-weight: bold;
         display: inline;
         padding: 0 30px;
@@ -164,9 +172,20 @@
     p{
         line-height: 30px;
     }
+    img{
+        max-width: 100%;
+        display: block;
+        margin: 10px 0;
+    }
 }
-.centercontent{
+.content{
     text-align: center
+}
+.imagewrap{
+    img{
+        float: left;
+        max-width: 50%;;
+    }
 }
 /*合作加盟*/
 .toptext{
@@ -296,6 +315,10 @@
         }
     }
 }
+.indexpart1{
+    padding-top: 30px;
+    padding-bottom: 80px;
+}
 .parttitle{
     font-size: 30px;
     text-align: center;
@@ -331,8 +354,11 @@
         }
     }
 }
+.indexpart2{
+    background-color: rgb(236, 236, 236);
+    padding-bottom: 50px;
+}
 .codeul{
-    margin-bottom: 50px;
     li{
         float: left;
         width: 400px;
@@ -430,6 +456,7 @@
 .orangebg{
     background-color: #eb7221
 }
+
 .edition2{
     margin: 20px 0;
 }
