@@ -207,6 +207,9 @@
                 <a href="javascript:;" class="gotoplink"></a>
             </li>
         </ul>
+        <div class="noticepop">
+            提交成功，我们会尽快和您联系！
+        </div>
     </div>
     <!-- //wrap -->
     <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
@@ -215,6 +218,10 @@
     <script>
         $(function() {
             slide(".indexbanner", 420);
+            //提交成功提示
+            $(".submitbtn").click(function() {
+                $(".noticepop").show().delay(2000).hide(300);
+            })
         });
     </script>
 </body>

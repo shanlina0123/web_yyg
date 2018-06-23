@@ -146,10 +146,10 @@ header {
   color: #01AAED;
 }
 .nav li:hover .subnav {
+  display: block;
   background-color: #fff;
   border: 1px solid #ddd;
   border-top: none;
-  display: block;
 }
 .nav li.on {
   border-color: #01AAED;
@@ -163,6 +163,7 @@ header {
   top: 83px;
   left: 0;
   width: 100%;
+  z-index: 300;
 }
 .nav li .subnav a {
   display: block;
@@ -375,4 +376,20 @@ footer {
   display: inline-block;
   padding: 0 3px 0 8px;
   color: #999;
+}
+/*信息提交成功提示*/
+.noticepop {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  height: 25px;
+  line-height: 25px;
+  margin-left: -135px;
+  margin-top: -33px;
+  padding: 20px 30px;
+  color: #fff;
+  background-color: #333;
+  border-radius: 5px;
+  z-index: 300;
 }
