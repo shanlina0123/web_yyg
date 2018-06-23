@@ -271,7 +271,6 @@ footer {
   text-align: center;
 }
 .rightlink li .phonenum {
-  display: none;
   position: absolute;
   width: 150px;
   height: 50px;
@@ -280,13 +279,16 @@ footer {
   top: 0;
   right: 50px;
   color: #fff;
+  transition: opacity 1s;
   background-color: #01AAED;
+  opacity: 0;
 }
 .rightlink li .erweimaimg {
-  display: none;
   position: absolute;
   right: 55px;
   top: 0;
+  transition: opacity 1s;
+  opacity: 0;
 }
 .rightlink li .phonelink {
   background: #f0f0f0 url(../images/righticon1.png) center 15px no-repeat;
@@ -308,6 +310,14 @@ footer {
 .rightlink li .gotoplink:hover {
   background-position: center -59px;
   background-color: #01AAED;
+}
+.rightlink .phonelinkwrap:hover .phonenum {
+  opacity: 1;
+  transition-duration: .5s;
+}
+.rightlink .erweimawrap:hover .erweimaimg {
+  opacity: 1;
+  transition-duration: .5s;
 }
 /*分页*/
 .page {
