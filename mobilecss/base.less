@@ -1,7 +1,7 @@
 /*标签*/
 html, body, p, h1, h2, h3, h4, h5, h6, form, input, textarea, select, button, fieldset, legend, img, ul, ol, li, dl, dt, dd, th, td, pre, blockquote { margin: 0; padding: 0; }
-html { color: #333; background: #fff; font-size: 62.5%; }
-body, button, input, select, textarea, h1, h2, h3, h4, h5, h6 { font-size: 1.4em; font-family:microsoft yahei, SimSun,Verdana, Arial, sans-serif; }
+html { color: #333; background: #fff; font-size: .14rem; }
+body, button, input, select, textarea, h1, h2, h3, h4, h5, h6 { font-size: .14rem; font-family:microsoft yahei, SimSun,Verdana, Arial, sans-serif; }
 img, fieldset { border: 0; vertical-align: middle; }
 textarea { word-wrap: break-word; word-break: break-all; resize: none; }
 li { list-style: none; }
@@ -16,9 +16,9 @@ a { text-decoration: none; color: #333; }
 .f14{font-size: 14px}
 .f18{font-size: 16px}
 .f20{font-size: 18px}
-
 /*内容宽度*/
-.w1200{width: 1200px;margin: 0 auto;}
+.w1200{width:94%;padding-left: 3%;padding-right: 3%;}
+.wrap{width: 100%;min-width: 100%;max-width: 750px; margin:0}
 /*清理浮动*/
 .clearfix:before,
 .clearfix:after {
@@ -31,83 +31,68 @@ a { text-decoration: none; color: #333; }
  * Include this rule to trigger hasLayout and contain floats.
  */
 .clearfix {*zoom: 1}
-
+.main{
+    padding-bottom: 608px;
+}
 /*头部*/
 header{
-    border-bottom: 1px solid #ddd;
-}
-.main{
-    padding-bottom: 370px;
-}
-.logolink{
-    display: block;
-    height: 80px;
-    line-height: 80px;
-}
-.nav{
-    margin-left: 180px;
-    li{
-        float: left;
-        height: 80px;
-        line-height: 80px;
-        position: relative;
-        border-bottom: 3px solid #fff;
-        >a{
-            display: block;
-            padding: 0 30px;
-            font-size: 14px;
+    position: fixed;
+    height: 1rem;
+    line-height: 1rem;
+    background: url(../images/headBg.png) left top;
+    z-index: 4000;
+    .mobilelogo{
+        width: 30%;
+        img{
+            width: 100%;
         }
-        &:hover{
-            >a{
-                color: #01AAED;
-            }
-            .subnav{
-                display: block;
-                background-color: #fff;
-                border: 1px solid #ddd;
-                border-top: none;
-            }
-        }
-        &.on{
-            border-color: #01AAED;
-            >a{
-                color: #01AAED;
+    }
+    .linkbtn{
+        display: inline-block;
+        width: 1.8rem;
+        height: .5rem;
+        line-height: .5rem;
+        text-align: center;
+        color: #fff;
+        border-radius: .1rem;
+        margin: .25rem auto .25rem .8rem;
+        background-color: #01AAED;
+    }
+    .navbtn{
+        width: .6rem;
+        height: .6rem;
+        margin-top: .2rem;
+    }
+    .navwrap{
+        display: none;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        right: 0;
+        top: 1rem;
+        background: url(../images/headBg.png) left top;
+        z-index: 4000;
+        .nav{
+            text-align: right;
+            padding: 0 3%;
+            li{
+                border-bottom: 1px solid #fff;
+                a{
+                    color: #fff;
+                }
             }
         }
         .subnav{
             display: none;
-            position: absolute;
-            top: 83px;
-            left: 0;
-            width: 100%;
-            z-index: 300;
             a{
                 display: block;
-                height: 40px;
-                line-height: 40px;
-                font-size: 14px;
-                text-align: center;
-                &:hover{
-                    color: #01AAED;
+                padding-right: 10%;
+                border-top: 1px solid #fff;
+                &:first-child{
+                    border-top: none;
                 }
             }
         }
-    }
-}
-.topRightBtn{
-    display: block;
-    font-size: 14px;
-    width: 130px;
-    height: 40px;
-    line-height: 40px;
-    border-radius: 10px;
-    color: #fff;
-    text-align: center;
-    background-color: #01AAED;
-    margin-top: 20px;
-    &:hover{
-        color: #fff;
-        opacity: .8;
     }
 }
 /*底部*/
@@ -115,12 +100,13 @@ footer{
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 352px;
+    height: 588px;
     background:url(../images/blackbg.png) left top;
 }
 .copyright{
     text-align: center;
-    line-height: 46px;
+    line-height: .45rem;
+    padding:0 3%;
     color: #fff;
     border-top: 1px solid #ddd;
 }
@@ -129,26 +115,27 @@ footer{
     padding-bottom: 10px;
 }
 .footleft{
-    width: 600px;
+    width: 100%;
     .contactnotice{
         color: #fff;
+        font-size: .3rem;
         margin-bottom: 15px;
     }
     .formitem{
         margin-bottom: 15px;
         input{
-            width: 400px;
+            width: 96%;
             height: 40px;
             line-height: 40px;
-            font-size: 14px;
-            padding:  0 10px;
+            font-size: .2rem;
+            padding:  0 2%;
             border: 1px solid #707682;
             outline: none;
         }
     } 
     .submitbtn{
         display: block;
-        width: 420px;
+        width: 100%;
         height: 40px;
         line-height: 40px;
         font-size: 16px;
@@ -159,14 +146,17 @@ footer{
     }
 }
 .footright{
-    width: 580px;
-    margin-left: 20px;
+    width: 100%;
     .messageul{
         margin-top: 35px;
         li{
             color: #fff;
-            margin-bottom: 15px;
+            margin-bottom: .2rem;
+            font-size: .2rem;
             line-height: 25px;
+            >img{
+                width: .5rem;
+            }
             span{
                 margin-left: 10px;
             }
@@ -176,26 +166,26 @@ footer{
 /*右侧导航*/
 .rightlink{
     position: fixed;
-    right: 10px;
-    top: 50%;
+    right: 0;
+    top: 60%;
     z-index: 3000;
     li{
         margin-bottom: 10px;
         position: relative;
         a{
             display: block;
-            width: 50px;
-            height: 50px;
+            width: 1rem;
+            height: 1rem;
             text-align: center;
         }
         .phonenum{
             position: absolute;
-            width: 150px;
-            height: 50px;
-            line-height: 50px;
+            width: 3rem;
+            height: 1rem;
+            line-height: 1rem;
             text-align: center;
             top: 0;
-            right: 50px;
+            right: 1rem;
             color: #fff;
             transition: opacity 1s;
             background-color: #01AAED;
@@ -203,7 +193,9 @@ footer{
         }
         .erweimaimg{
             position: absolute;
-            right: 55px;
+            width: 2rem;
+            height: 2rem;
+            right: 1.1rem;
             top: 0;
             transition: opacity 1s;
             opacity: 0;
@@ -300,18 +292,17 @@ footer{
     color: #999;
   }
   /*信息提交成功提示*/
-  .noticepop{
+  .popwrap{
       display: none;
       position: fixed;
-      top: 50%;
-      left: 50%;
-      height: 25px;
-      line-height: 25px;
-      margin-left: -135px;
-      margin-top: -33px;
-      padding: 20px 30px;
+      bottom: 0rem;
+      left: 0;
+      width: 100%;
+      height: .8rem;
+      line-height: .8rem;
+      text-align: center;
       color: #fff;
-      background-color: #333;
-      border-radius: 5px;
-      z-index: 300;
+      background: url(../images/headBg.png) left top;
+      z-index: 5000;
   }
+
