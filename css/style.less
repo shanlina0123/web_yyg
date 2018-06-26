@@ -49,10 +49,20 @@
     }
 }
 /*新闻列表*/
+.newtitle{
+    font-size: 30px;
+    text-align: center;
+    padding: 30px 0;
+    border-bottom: 1px solid #666;
+}
 .newsList{
     li{
         margin-top: 20px;
-        border: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        width: 80%;
+        margin-left:10%;
+        margin-right: 10%;
+        padding: 30px 0;
         &:hover{
             background-color: #f2f2f2
         }
@@ -61,14 +71,12 @@
         }
         .newleft{
             display: table-cell;
-            width: 300px;
-            line-height: 190px;
+            width: 20%;
             vertical-align: middle;
             text-align: center;
             overflow: hidden;
             img{
-                max-width: 300px;
-                max-height: 197px;
+                width: 100%;
                 margin: 0 auto;
                 display :inline-block;
                 vertical-align: middle;
@@ -89,41 +97,55 @@
                 }
             }
         }
-        .hadread{
-            font-size: 16px;
-            margin-left: 20px;
-        }
+
         .newright{
-            width: 858px;
-            padding: 15px 20px;
+            width: 50%;
+            padding: 10px 5%;
             &:hover{
                 a{
                     color: #01AAED
                 }
             }
-            .newmore{
-                margin-left: 10px;
+            .newname{
+                display: block;
+                height: 30px;
+                font-size: 22px;
+                line-height: 30px;
+                color: #01AAED;
+                overflow: hidden;
+            }
+            .newdescribe{
+                height: 25px;
+                line-height: 25px;
+                font-size: 12px;
+                display: -webkit-box;
+                margin-top: 45px;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 1;
+                overflow: hidden;
             }
         }
-        .newname{
-            display: block;
-            height: 30px;
-            font-size: 22px;
-            line-height: 30px;
-            margin: 10px 0;
-            overflow: hidden;
+        .newmore{
+            display: inline-block;
+            border: 1px solid #000;
+            padding: 5px 15px;
+            margin-left: 5%;
+            margin-top: 40px;
+            &:hover{
+                color: #01AAED;
+                border-color: #01AAED
+            }
         }
-        .newdescribe{
-            height: 75px;
-            line-height: 25px;
-            font-size: 12px;
-            display: -webkit-box;
-            -webkit-box-orient: vertical;
-            -webkit-line-clamp: 3;
-            overflow: hidden;
-        }
-        .morewrap{
-            line-height: 30px;
+    }
+    .noimgli{
+        .newright {
+            width: 74%;
+            padding-left: 10px;
+            .newdescribe {
+                margin-top: 20px;
+                height: 75px;
+                -webkit-line-clamp: 3;
+            }
         }
     }
 }
@@ -172,7 +194,7 @@
     position: relative;
     width: 40%;
     border-top: 2px solid #ddd;
-    margin: 50px auto;
+    margin: 70px auto;
     span{
         position: absolute;
         line-height: 40px;
@@ -195,14 +217,32 @@
         display: block;
         margin: 10px 0;
     }
+    .leftdes{
+        width: 48%;
+        text-indent: 25px;
+    }
 }
-.content{
-    text-align: center
-}
-.imagewrap{
-    img{
-        float: left;
-        max-width: 50%;;
+.companyul{
+    margin-top: 50px;
+    li{
+        width: 32.5%;
+        margin-left: 1%;
+        box-shadow: 0 3px 20px #d2d2d2;
+        padding: 50px 0;
+        border-radius: 10px;
+        &:first-child{
+            margin-left: 0;
+        }
+       img{
+           display: block;
+           border-radius: 50%;
+           margin: 20px auto
+       }
+       p{
+           text-align: center;
+           padding: 10px 0;
+           font-size: 16px;
+       }
     }
 }
 /*合作加盟*/
@@ -555,7 +595,7 @@
     padding: 50px 0;
     color: #393D49
 }
-.sta0rwrap{
+.starwrap{
     padding: 30px 0;
     >li{
         float: left;
