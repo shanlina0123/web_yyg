@@ -171,6 +171,8 @@ footer{
     top: 60%;
     z-index: 3000;
     li{
+        width: 1rem;
+        height: 1rem;
         margin-bottom: 10px;
         position: relative;
         a{
@@ -191,6 +193,10 @@ footer{
             transition: opacity 1s;
             background-color: #01AAED;
             opacity: 0;
+            &.on{
+                opacity: 1;
+                transition-duration: .5s;
+            }
         }
         .erweimaimg{
             position: absolute;
@@ -200,6 +206,10 @@ footer{
             top: 0;
             transition: opacity 1s;
             opacity: 0;
+            &.on{
+                opacity: 1;
+                transition-duration: .5s;
+            }
         }
         .phonelink{
             background: #f0f0f0  url(../images/righticon1.png) center 15px no-repeat;
@@ -221,18 +231,6 @@ footer{
                 background-position: center -59px;
                 background-color: #01AAED;
             }
-        }
-    }
-    .phonelinkwrap:hover{
-        .phonenum{
-            opacity: 1;
-            transition-duration: .5s;
-        }
-    }
-    .erweimawrap:hover{
-        .erweimaimg{
-            opacity: 1;
-            transition-duration: .5s;
         }
     }
 }

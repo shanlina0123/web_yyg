@@ -229,7 +229,13 @@
             $(".submitbtn").click(function() {
                 $(".noticepop").show().delay(2000).hide(300);
             });
-
+            //右侧按钮点击效果
+            $(".rightlink .phonelinkwrap").click(function() {
+                $(this).find(".phonenum").toggleClass("on")
+            });
+            $(".rightlink .erweimawrap").click(function() {
+                $(this).find(".erweimaimg").toggleClass("on")
+            })
         });
     </script>
 </body>
