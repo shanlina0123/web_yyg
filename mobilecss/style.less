@@ -1,30 +1,25 @@
 /*招聘信息*/
 .recruitbanner{
     padding: .1px;
-    height: 420px;
+    height: 5rem;
     background: url(../images/recruitbanner.jpg) center no-repeat;
+    background-size: cover;
     .topbanner{
-        font-size: 40px;
-        margin-top: 157px;
-        margin-left: 80px;
+        font-size: .8rem;
+        margin-top: 1.5rem;
+        text-align: center;
     }
     .bottombanner{
-        width: 405px;
-        margin-top: 25px;
-        font-size: 16px;
-        line-height: 25px;
+        width: 100%;
+        margin-top: .2rem;
+        font-size: .2rem;
+        line-height: .5rem;
         text-align: center;
-        margin-left: -27px;
     }
 }
 .recruitul{
-    li{
-        margin-top:20px;
-        padding: 15px;
-        background-color:#f2f2f2 
-    }
     .leftpart{
-        width: 400px;
+        width: 100%;
         .recruitname{
             display: block;
             font-size: 20px;
@@ -34,11 +29,10 @@
         }
     }
     .rightpart{
-        width: 750px;
-        margin-left: 20px;
+        width:100%;
         .togolist{
             p{
-                line-height: 30px;
+                line-height: .5rem;
                 text-indent: 15px;
             }
         }
@@ -49,29 +43,26 @@
     }
 }
 /*新闻列表*/
+.newmain{
+    padding-top: 1rem;
+}
 .newtitle{
-    font-size: 30px;
+    width: 100%;
+    font-size: .5rem;
     text-align: center;
-    padding: 30px 0;
+    padding: .3rem 0;
     border-bottom: 1px solid #666;
 }
 .newsList{
     li{
-        margin-top: 20px;
+        padding: .4rem 0;
         border-bottom: 1px solid #ccc;
-        width: 80%;
-        margin-left:10%;
-        margin-right: 10%;
-        padding: 30px 0;
-        &:hover{
-            background-color: #f2f2f2
-        }
         .lefttip{
             font-size: 16px;
         }
         .newleft{
             display: table-cell;
-            width: 20%;
+            width: 25%;
             vertical-align: middle;
             text-align: center;
             overflow: hidden;
@@ -99,8 +90,8 @@
         }
 
         .newright{
-            width: 50%;
-            padding: 10px 5%;
+            width: 45%;
+            padding: .1rem .2rem;
             &:hover{
                 a{
                     color: #01AAED
@@ -108,9 +99,9 @@
             }
             .newname{
                 display: block;
-                height: 30px;
-                font-size: 22px;
-                line-height: 30px;
+                height: .5rem;
+                font-size: .35rem;
+                line-height: .5rem;
                 color: #01AAED;
                 overflow: hidden;
             }
@@ -119,7 +110,6 @@
                 line-height: 25px;
                 font-size: 12px;
                 display: -webkit-box;
-                margin-top: 45px;
                 -webkit-box-orient: vertical;
                 -webkit-line-clamp: 1;
                 overflow: hidden;
@@ -128,9 +118,8 @@
         .newmore{
             display: inline-block;
             border: 1px solid #000;
-            padding: 5px 15px;
-            margin-left: 5%;
-            margin-top: 40px;
+            padding: .015rem .1rem;
+            margin-top: .4rem;
             &:hover{
                 color: #01AAED;
                 border-color: #01AAED
@@ -139,14 +128,30 @@
     }
     .noimgli{
         .newright {
-            width: 74%;
-            padding-left: 10px;
+            width: 70%;
             .newdescribe {
-                margin-top: 20px;
-                height: 75px;
+                margin-top: .2rem;
+                height: 1.2rem;
+                line-height: .4rem;
                 -webkit-line-clamp: 3;
             }
         }
+        .newmore{
+            margin-top: 1.1rem;
+        }
+    }
+}
+.mobilepage{
+    margin-top: .3rem;
+    a{
+        display: inline-block;
+        padding: .1rem .3rem;
+        border: 1px solid #333;
+        color: #333;
+    }
+    .unable{
+        color: #ddd;
+         border-color: #ddd;
     }
 }
 /*新闻详情页面*/
@@ -184,54 +189,59 @@
 }
 /*关于我们页面*/
 .aboutbanner{
-    height: 420px;
-    background: url(../images/aboutbanner.png) center no-repeat
-}
-.contenttop{
-    padding-top: 30px;
+    height: 5rem;
+    background: url(../images/aboutbanner.png) center no-repeat;
+    background-size: cover;
 }
 .abouttitle{
     position: relative;
-    width: 40%;
+    width: 100%;
     border-top: 2px solid #ddd;
-    margin: 70px auto;
+    margin: .8rem auto;
     span{
         position: absolute;
         line-height: 40px;
         top: -20px;
         left: 50%;
-        margin-left: -67px;
-        font-size: 26px;
+        margin-left: -.9rem;
+        font-size: .3rem;
         font-weight: bold;
         display: inline;
-        padding: 0 30px;
+        padding: 0 .5rem;
         background-color: #fff;
     }
 }
 .contentpart{
     p{
-        line-height: 30px;
+        line-height: .5rem;
     }
     img{
         max-width: 100%;
         display: block;
-        margin: 10px 0;
+        margin: .2rem 0;
     }
     .leftdes{
-        width: 48%;
+        width: 80%;
+        margin: 0 auto;
         text-indent: 25px;
+    }
+    .rightimg{
+        width: auto;
+        display: block;
+        margin: 0 auto
     }
 }
 .companyul{
-    margin-top: 50px;
     li{
-        width: 32.5%;
+        width: 100%;
         margin-left: 1%;
         box-shadow: 0 3px 20px #d2d2d2;
         padding: 50px 0;
         border-radius: 10px;
+        margin-top: .8rem;
         &:first-child{
             margin-left: 0;
+            margin-top: 0;
         }
        img{
            display: block;
@@ -247,19 +257,16 @@
 }
 /*合作加盟*/
 .toptext{
-    font-size: 30px;
+    font-size: .5rem;
     color: #666;
-    padding: 50px 0 47px;
+    padding: .5rem 0;
     text-align: center;
 }
 .topdes{
-    border: 8px solid #eee;
-    padding: 20px 30px;
     .topright{
-        margin-left: 30px;
         li{
             font-size: 16px;
-            margin: 80px 0;
+            margin: .8rem 0;
         }
         .numbers{
             display: inline-block;
@@ -276,14 +283,7 @@
     }
 }
 .bottomdes{
-    height: 500px;
-    padding: 20px 0 0 150px;
-    background:#F9F9F9 url(../images/flowimg.gif) 50px center no-repeat;
     li{
-        width: 1013px;
-        height: 80px;
-        background: url(../images/triangle.png) center no-repeat;
-        padding: 17px 23px 0 35px;
         margin-bottom: 19px;
         box-sizing: border-box;
         .title{
@@ -293,9 +293,15 @@
         }
     }
 }
+.topleft{
+    width: 100%;
+    img{
+        width: 100%
+    }
+}
 /*合作加盟banner*/
 .bannerwrap{
-    height: 420px;
+    height: 5rem;
     background: url(../images/cooperate.jpg) center no-repeat;
 }
 .bannertext{
@@ -303,7 +309,7 @@
     .texts{
         font-size: .5rem;
         color: #fff;
-        padding: 110px 0 25px;
+        padding: 1.7rem 0 0.1rem;
     }
     .bannerbtn{
         display: block;
@@ -311,15 +317,15 @@
         height: 40px;
         line-height: 40px;
         color: #fff;
-        font-size: 18px;
+        font-size: .3rem;
         border-radius: 5px;
-        margin: 10px auto;
+        margin: .1rem auto;
         background-color: #01AAED
     }
     .bannerphone{
         color: #fff;
         font-size: 16px;
-        margin-top: 30px;
+        margin-top: .3rem;
     }
 }
 /*首页样式*/
@@ -457,59 +463,71 @@
 }
 /*产品页面样式*/
 .probannerwrap{
-    height: 420px;
+    height: 5rem;
     background: url(../images/probanner.jpg) center no-repeat;
+    background-size: cover;
     .probannertext{
-        text-align: right;
+        text-align: center;
         color: #fff;
-        font-size: 32px;
-        margin-top: 135px;
+        font-size: .3rem;
+        margin-top: 1.8rem;
         span{
-            font-size: 60px;
-            margin-right: 25px;
+            font-size: .6rem;
+            margin-right: .3rem;
         }
     }
     .prolinkbtn{
+        float: unset;
+        display: block;
         color: #fff;
-        width: 130px;
-        height: 40px;
-        font-size: 18px;
-        line-height: 40px;
+        width: 2.3rem;
+        height: .8rem;
+        font-size: .3rem;
+        line-height: .8rem;
         text-align: center;
         border-radius: 10px;
         background: #fa6a0b;
-        margin-top: 20px;
+        margin: 0 auto;
+        margin-top: .4rem;
     }
 }
-
+.edition1{
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+}
 .editionleft{
-    width: 450px;
-    height: 450px;
-    background: url(../images/pcbg.png) center no-repeat;
+    width: 100%;
+    height: auto;
+    background: none;
+    padding-left: 0;
+    padding-right: 0;
     span{
         display: block;
-        font-size: 24px;
+        text-align: center;
+        font-size: .4rem;
         color: #FF5722;
         text-align:center;
-        margin-top: 195px;
+        margin-top: .2rem;
     }
 }
 .editionright{
-    width: 685px;
-    height: 450px;
-    background: url(../images/pcline.png) no-repeat;
-    padding-left: 65px;
+    width: 100%;
+    height: auto;
+    background: none;
+    padding-left: 0;
+    margin-top: .6rem;
     li{
-        margin-bottom: 26px;
+        margin-bottom: .3rem;
         &:first-child{
-            margin-top: -10px;
+            margin-top: 0;
         }
         span{
             display: inline-block;
-            padding:8px 15px;
+            padding:.1rem .05rem;
             border-radius: 5px;
             color: #fff;
-            margin: 0 8px;
+            margin: 0;
         }
     }
 }
@@ -521,36 +539,47 @@
 }
 
 .edition2{
-    margin: 20px 0;
+    width: 100%;
+    position: relative;
+    margin: .2rem 0;
+    padding-left:0;
+    padding-right: 0;
+    padding-top: 1rem;
 }
 .edtion2left{
-    width: 805px;
-    height: 537px;
-    padding-left: 30px;
-    background: url(../images/phoneline1.png) center no-repeat;
+    width: 100%;;
+    height: auto;
+    padding-left: 0;
+    background: none;
     .ehition2ul{
-        padding-top: 100px;
-        margin-left: -65px;
+        padding-top: 1rem;
+        margin-left: 0;
         li{
-            margin-bottom: 20px;
+            margin-bottom: .25rem;
             span{
                 display: inline-block;
-                padding:8px 15px;
+                padding:.1rem .05rem;
                 border-radius: 5px;
                 color: #fff;
-                margin: 0 8px;
+                margin: 0;
             }
             .null{
-                margin: 0 20px;
+                width: 1.14rem;
+                text-align: center;
+                margin: 0 .02rem;
             }
             .whitebg{
+                width: 1.14rem;
+                text-align: center;
                 background: #fff;
                 color: #333;
                 border:1px solid #333;
-                margin: 0 19px;
+                margin: 0;
             }
             .orangebg{
-                margin: 0 19px;
+                width: 1.14rem;
+                text-align: center;
+                margin: 0;
                 border: 1px solid #eb7221
             }
         }
@@ -558,36 +587,45 @@
     
 }
 .edtion2right{
-    width: 230px;
-    height: 470px;
-    margin-left: -53px;
-    margin-top: 13px;
-    background: url(../images/phonebg.png) center no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    margin-left: 0;
+    margin-top: .1rem;
+    background: none;
     span{
         display: block;
-        font-size: 24px;
+        font-size: .5rem;
         color: #FF5722;
         text-align: center;
-        margin-top: 195px;
+        margin-top: 0;
     }
 }
 .editionleft.editionleft3{
-    width: 350px;
-    height: 470px;
-    background: url(../images/phonebg.png) center no-repeat;
+    width: 100%;
+    height: auto;
+    background: none;
 }
 .editionright.editionright3{
-    width: 765px;
-    height: 290px;
-    margin-top: 95px;
-    background: url(../images/phoneline2.png) no-repeat;
+    width: 100%;
+    height: auto;
+    margin-top: .5rem;
+    background: none;
     li{
-        margin-bottom: 45px;
+        margin-bottom: .3rem;
+        float: left;
+        width: 1.6rem;
+        margin-left:.1rem;
         &:first-child{
             margin-top: 0;
+            margin-left:0;
         }
         span{
-            margin: 0 15px;
+            margin: 0 0 .3rem 0 ;
+            text-align: center;
+            width: 1.4rem;
         }
     }
 }
@@ -595,29 +633,28 @@
 
 
 .protext{
-    font-size: 32px;
+    font-size: .5rem;
     text-align: center;
-    padding: 50px 0;
+    padding: .4rem 0;
     color: #393D49
 }
 .starwrap{
-    padding: 30px 0;
     >li{
-        float: left;
-        margin: 0 25px;
+        margin: .5rem auto;
     }
     .bluebg{
         position: relative;
-        width: 250px;
-        height: 250px;
-        border-radius: 250px;
+        width: 5rem;
+        height: 5rem;
+        border-radius: 5rem;
+        margin: 0 auto;
         background-color: #FF5722;
     }
     .innerbg{
         position: absolute;
-        width: 250px;
-        height: 250px;
-        border-radius: 250px;
+        width: 5rem;
+        height: 5rem;
+        border-radius: 5rem;
         background-color: #fff;
         border: 1px solid #ddd;
         text-align: center;
@@ -646,15 +683,15 @@
     }
 }
 .textdeswrap{
-    margin: 40px 0;
+    margin-top: .4rem;
     li{
         .destitle{
-            font-size: 30px;
+            font-size: .5rem;
             color: #01AAED
         }
         .destexts{
-            line-height: 25px;
-            padding: 10px 0;
+            line-height: .5rem;
+            padding: .2rem 0;
             color: #393D49
         }
     }
@@ -665,9 +702,9 @@
     border: 1px solid #ddd;
     tr{
         th{
-            height: 60px;
-            line-height: 60px;
-            font-size: 16px;
+            height: 1.2rem;
+            line-height: 1.2rem;
+            font-size: .35rem;
             width: 33%;
             border: 1px solid #ddd;
             background-color: #eee;
@@ -677,6 +714,10 @@
             padding: 8px 0;
             color: #fff;
             background-color: #01AAED;
+            img{
+                width: .32rem;
+                height: .32rem;
+            }
         }
     }
 }

@@ -170,6 +170,7 @@ header .navwrap .nav li {
   border-bottom: 1px solid #fff;
 }
 header .navwrap .nav li a {
+  display: block;
   color: #fff;
 }
 header .navwrap .subnav {
