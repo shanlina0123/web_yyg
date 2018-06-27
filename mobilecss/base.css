@@ -120,7 +120,7 @@ a:focus {
   *zoom: 1;
 }
 .main {
-  padding-bottom: 608px;
+  padding-bottom: .5rem;
 }
 /*头部*/
 header {
@@ -130,27 +130,25 @@ header {
   background: url(../images/headBg.png) left top;
   z-index: 4000;
 }
-header .mobilelogo {
-  width: 30%;
-}
 header .mobilelogo img {
-  width: 100%;
+  width: 1.47rem;
 }
 header .linkbtn {
   display: inline-block;
-  width: 1.8rem;
-  height: .5rem;
-  line-height: .5rem;
+  width: 2rem;
+  height: .6rem;
+  line-height: .6rem;
   text-align: center;
   color: #fff;
+  font-size: .3rem;
   border-radius: .1rem;
-  margin: .25rem auto .25rem .8rem;
+  margin: .2rem auto .25rem .8rem;
   background-color: #01AAED;
 }
 header .navbtn {
-  width: .6rem;
-  height: .6rem;
-  margin-top: .2rem;
+  width: .48rem;
+  height: .48rem;
+  margin-top: .26rem;
 }
 header .navwrap {
   display: none;
@@ -172,6 +170,7 @@ header .navwrap .nav li {
 header .navwrap .nav li a {
   display: block;
   color: #fff;
+  font-size: .3rem;
 }
 header .navwrap .subnav {
   display: none;
@@ -186,16 +185,14 @@ header .navwrap .subnav a:first-child {
 }
 /*底部*/
 footer {
-  position: absolute;
-  bottom: 0;
   width: 100%;
-  height: 588px;
   background: url(../images/blackbg.png) left top;
 }
 .copyright {
   text-align: center;
   line-height: .45rem;
   padding: 0 3%;
+  font-size: .24rem;
   color: #fff;
   border-top: 1px solid #ddd;
 }
@@ -218,7 +215,7 @@ footer {
   width: 96%;
   height: 40px;
   line-height: 40px;
-  font-size: .2rem;
+  font-size: .24rem;
   padding: 0 2%;
   border: 1px solid #707682;
   outline: none;
@@ -241,9 +238,9 @@ footer {
   margin-top: 35px;
 }
 .footright .messageul li {
-  color: #fff;
+  color: #fff!important;
   margin-bottom: .2rem;
-  font-size: .2rem;
+  font-size: .24rem;
   line-height: 25px;
 }
 .footright .messageul li > img {
@@ -260,22 +257,23 @@ footer {
   z-index: 3000;
 }
 .rightlink li {
-  width: 1rem;
-  height: 1rem;
-  margin-bottom: 10px;
+  width: .8rem;
+  height: .8rem;
+  margin-bottom: .1rem;
   position: relative;
 }
 .rightlink li a {
   display: block;
-  width: 1rem;
-  height: 1rem;
+  width: .8rem;
+  height: .8rem;
   text-align: center;
 }
 .rightlink li .phonenum {
   position: absolute;
-  width: 3rem;
-  height: 1rem;
-  line-height: 1rem;
+  width: 2rem;
+  height: .8rem;
+  line-height: .8rem;
+  font-size: .24rem;
   text-align: center;
   top: 0;
   right: 1rem;
@@ -290,8 +288,8 @@ footer {
 }
 .rightlink li .erweimaimg {
   position: absolute;
-  width: 2rem;
-  height: 2rem;
+  width: 1.4rem;
+  height: 1.4rem;
   right: 1.1rem;
   top: 0;
   transition: opacity 1s;
@@ -302,25 +300,16 @@ footer {
   transition-duration: .5s;
 }
 .rightlink li .phonelink {
-  background: #f0f0f0 url(../images/righticon1.png) center 15px no-repeat;
-}
-.rightlink li .phonelink:hover {
-  background-position: center -62px;
-  background-color: #01AAED;
+  background: #f0f0f0 url(../images/righticon1.png) center 0.3rem no-repeat;
+  background-size: .32rem;
 }
 .rightlink li .erweimalink {
-  background: #f0f0f0 url(../images/righticon2.png) center 12px no-repeat;
-}
-.rightlink li .erweimalink:hover {
-  background-position: center -59px;
-  background-color: #01AAED;
+  background: #f0f0f0 url(../images/righticon2.png) center 0.28rem no-repeat;
+  background-size: .32rem;
 }
 .rightlink li .gotoplink {
-  background: #f0f0f0 url(../images/righticon3.png) center 10px no-repeat;
-}
-.rightlink li .gotoplink:hover {
-  background-position: center -59px;
-  background-color: #01AAED;
+  background: #f0f0f0 url(../images/righticon3.png) center 0.25rem no-repeat;
+  background-size: .32rem;
 }
 /*分页*/
 .page {
@@ -386,6 +375,7 @@ footer {
   bottom: 0rem;
   left: 0;
   width: 100%;
+  font-size: .28rem;
   height: .8rem;
   line-height: .8rem;
   text-align: center;

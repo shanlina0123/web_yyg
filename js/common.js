@@ -14,10 +14,10 @@ $(".gotoplink").click(function() {
 $("header .navbtn").click(function() {
     if ($(".navwrap").css("display") === "none") {
         $(".navwrap").slideDown();
-        $("body").height($(window).height()).css("overflow", "hidden");
+        $("body,html").height($(window).height()).css("overflow", "hidden");
     } else {
         $(".navwrap").slideUp();
-        $("body").css("overflow", "auto");
+        $("body,html").height("auto").css("overflow", "auto");
         $("header .navwrap .nav .subnav").hide()
     }
 });
@@ -36,7 +36,14 @@ $(window).click(function(e) {
         $("body").css("overflow", "auto");
     }
 });
-//轮播
+//右侧按钮点击效果
+$(".rightlink .phonelinkwrap").click(function() {
+    $(this).find(".phonenum").toggleClass("on")
+});
+$(".rightlink .erweimawrap").click(function() {
+        $(this).find(".erweimaimg").toggleClass("on")
+    })
+    //轮播
 function slide(name, width, height) {
     if ($(name).children().length > 1) {
         $(name).slidesjs({
